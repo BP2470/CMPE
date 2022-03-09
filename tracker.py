@@ -1,6 +1,13 @@
-def func_counter(func):
-    def wrapper(arg):
-        wrapper.counter += 1
-        return func(arg)
-    wrapper.counter = 0
-    return wrapper
+class func_counter(object):
+    counter = 0
+    def func_counter(self):
+        func_counter.counter+=1
+        return func_counter
+
+
+
+
+"""def func_counter(func):
+      func_counter.counter +=1
+      return func_counter
+func_counter.counter = 0"""
