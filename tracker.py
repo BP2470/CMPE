@@ -1,6 +1,6 @@
 def func_counter(func):
-    def count(call):
-        count.calls += 1
-        return func(call)
-    count.calls = 0
+    def count(x):
+        count.counter += 1
+        return func(x)
+    count.counter = 0
     return count
