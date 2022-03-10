@@ -6,7 +6,6 @@ def word_counting(str):
     words = str.split()
     for word in words:
         temp = ""
-        word = word.lower()
         for i in word:
             if i.isalpha():
                 temp = "".join([temp, i])
