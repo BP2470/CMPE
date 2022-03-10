@@ -1,4 +1,4 @@
-f = open("document.txt","r",encoding='utf-8')
+f = open("document.txt","r")
 d = f.read()
 count = dict()
 temp = ""
