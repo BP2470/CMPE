@@ -1,4 +1,4 @@
-f = open("document.txt","r")
+f = open("document.txt","r",encoding='utf-8')
 d = f.read()
 count = dict()
 temp = ""
@@ -24,7 +24,7 @@ def word_counting(str):
 word_counting(d)
 f.close()
 
-count = dict(sorted(count.items(), key=lambda item: (-item[1],item[0])))
+count = dict(sorted(count.items(), key=lambda item: (-item[1],item[0]))[:5])
 
 for key, value in count.items():
     print(str(key) + ': '+ str(value))
