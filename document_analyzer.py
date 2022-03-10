@@ -18,6 +18,13 @@ def word_counting(str):
                 else:
                     temp = "".join([temp, i])
                     word = temp
+            if i == "'":
+                if word.find("'s") or word.find("'t") or word.find("'d") or word.find("'ve") or word.find("'ll"):
+                    temp = "".join([temp, i])
+                    word = temp
+                else:
+                    temp = "".join([temp, i])
+                    word = temp
         if word in count:
             count[word] += 1
         else:
