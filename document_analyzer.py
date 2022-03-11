@@ -36,7 +36,7 @@ f.close()
 count = dict(sorted(count.items(), key=lambda item: (-item[1],item[0]))[:5])
 
 for key, value in count.items():
-    print(str(key) + ': '+ str(value))
+    print(f"{key}: {value}")
 
 
 
