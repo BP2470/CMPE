@@ -32,9 +32,9 @@ def word_counting(str):
 
 word_counting(d)
 f.close()
-
+print('')
 count = dict(sorted(count.items(), key=lambda item: (-item[1],item[0]))[:5])
-print('\n')
+
 for key, value in count.items():
     print(f"{key}: {value}")
 
